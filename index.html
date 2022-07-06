@@ -75,15 +75,15 @@
 
   <script>
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/{{{ LOADER_FILENAME }}}";
+    var loaderUrl = buildUrl + "/UnityLoader.js";
     var config = {
-      dataUrl: buildUrl + "/{{{ DATA_FILENAME }}}",
-      frameworkUrl: buildUrl + "/{{{ FRAMEWORK_FILENAME }}}",
-      codeUrl: buildUrl + "/{{{ CODE_FILENAME }}}",
+      dataUrl: buildUrl + "/testing1.data.unityweb",
+      frameworkUrl: buildUrl + "/testing1.wasm.framework.unityweb",
+      codeUrl: buildUrl + "/testing1.wasm.code.unityweb",
       streamingAssetsUrl: "StreamingAssets",
-      companyName: "{{{ COMPANY_NAME }}}",
-      productName: "{{{ PRODUCT_NAME }}}",
-      productVersion: "{{{ PRODUCT_VERSION }}}",
+      companyName: "WEBXR",
+      productName: "MULTI",
+      productVersion: "0.0",
     };
 
     var container = document.querySelector("#unity-container");
